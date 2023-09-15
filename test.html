@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funny testing page</title>
+    <link rel="stylesheet" link href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div>
+        <pre class="ascii-background ascii-top">
+          '._      /              '-..    |       /    /    _..;'    
+      ,'-.__ '.__.'                  ,' (._ ______ ___ _.;:'''     /'
+'-,.-'      '''                     /_.-''-`''    `_,,:''        /'  
+  |                                 | ,           >''          /'    
+ /                    THANKS!       ((      ,  ,''          _/'      
+'                                   ;.\     |\ `._        _/        /
+                                 ,; '.\     ( ';__'._   _/        /'/
+                                (/,-''-;.    \'/  \`:'./         / / 
+                       ..-''''-' / /   \ ''-\'|    | )  '>._    / /  
+      I LOVE         ,'      /  \' |   |      '.__/ ,',-'  _'''`(/   
+        IT.         /        )   ) `--'    _____  -:;-'   / )    `._ 
+.                 _.(     _.'  \(.__   ,-''     \  (     /,'     ,..'
+ \              ,'   _    `'(   -;'`   |         )  `,\_ |       _) /
+.-)            /_.-''        `-,  `-._ \         |_,-'  ';_,_,-''  / 
+   )          (         ,      /,,-'((`';:----:'';-''-;-^`        /  </pre>
+        <pre class="ascii-foreground">
+                   /              '-..                               
+      ,'-.__   __.'                  ,' (._ ______ ___ _             
+  ,.-'      '''                     /_.-''-`''    `                  
+  |                                 | ,                              
+ /                    THANKS!       ((      ,                        
+'                                   ;.\     |\                       
+                                 ,; '.\     ( ';__                   
+                                (/,-''-;.    \'/  \`:                
+                       ..-''''-' / /   \ ''-\'|    | )               
+      I LOVE         ,'      /  \' |   |      '.__/ ,',-'  _         
+        IT.         /        )   ) `--'    _____  -:;-'   / )        
+.                 _.(     _.'  \(.__   ,-''     \  (     /,'     ,.. 
+ \              ,'        `'(   -;'`   |         )  `,\_ |       _)  
+  )            /             `-,  `-._ \         |_,-'  ';_,_,-''    
+   )          (                /,,-'((`';:----:'';-''-;-^`           </pre>
+    </div>
+    <h1>
+        testing
+    </h1>
+    <form id="post-form">
+        <input
+            type="text"
+            name="name"
+            id="post-name"
+            placeholder="name"
+            autocomplete="off"
+            size=12
+        />  
+        <input
+            type="text"
+            name="content"
+            id="post-content"
+            placeholder="say hi!"
+            autocomplete="off"
+            size=32
+        />
+        <button type="submit">
+            post
+        </button>
+    </form>
+    <template id="post-template">
+        <p id="post-template-content">
+            hi
+        </p>
+    </template>
+    <div id="post-container"></div>
+    <script src="/js/test.js" type="module"></script>
+</body>
+</html>

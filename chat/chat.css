@@ -1,0 +1,96 @@
+:root {
+    --background: #0E0811;
+    --background-alt: #201326;
+    --primary: #F1D8FF;
+    --primary-alt: #742F99;
+    --secondary: #FFBDBD;
+    --secondary-alt: #FF4F4F;
+    --gray: #847B89;
+    --light-gray: #D4CBDB;
+    --superbright: #BF49FF;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+.box {    
+    position: absolute;
+
+    display: flex;
+
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+}
+
+.textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+    
+    background-color: var(--background-alt);
+    color: var(--light-gray);
+
+    outline-color: var(--secondary-alt);
+
+    width: 100%;
+    height: 100%;
+    
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 1em;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25em;
+    border-color: var(--background-alt);
+    transition-property: border-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    
+    resize: none;
+}
+
+.textarea:focus {
+    outline: none !important;
+    border-color: var(--superbright);
+}
+
+.attachment-button {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    bottom: calc(50% - 1em);
+    left: calc(1em + 1px);
+
+    width: 2em;
+    height: 2em;
+
+    border: none;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+
+    background-color: none;
+}
+
+.attachment-button img {
+    width: 1em;
+    height: 1em; 
+
+    margin-top: 0;
+}
